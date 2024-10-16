@@ -14,7 +14,7 @@ export class TeamBuilder {
 
     async setGameFormat(format: string, generation: string) {
         await this.page.getByRole('button', { name: 'Select a format ' }).click();
-        await this.page.getByPlaceholder('Search formats').pressSequentially(`[${generation}] ${format}`, { delay: 400 });
+        await this.page.getByPlaceholder('Search formats').pressSequentially(`[${generation}] ${format}`, { delay: 40 });
         await this.page.getByRole('button', { name: `[${generation}] ${format} ` }).click();
     }
 
@@ -25,4 +25,25 @@ export class TeamBuilder {
     async gotoAddPokemon() {
         await this.page.getByRole('button', { name: ' Add Pokémon' }).click();
     }
+
+    async validateTeam() {
+        await this.page.getByRole('button', { name: 'Validate' }).click();
+
+        const successMessage = this.page.locator('text=Your team is valid for [Gen 5] Ubers.');
+        await expect(successMessage).toBeVisible({
+            timeout: 5000,
+        });
+    }
+
+    async validateTeamWithFailure(expectedErrors: string[]) {
+        await this.page.locator('button:has-text("Validate")').click();
+
+        for (const error of expectedErrors) {
+            const errorMessage = this.page.locator(`text=${error}`);
+            await expect(errorMessage).toBeVisible({
+                timeout: 5000, 
+            });
+        }
+    }
+
 }

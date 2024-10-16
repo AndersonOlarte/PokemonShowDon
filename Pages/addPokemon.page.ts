@@ -12,9 +12,10 @@ export class AddPokemon {
         item: string,
         ability: string,
         movements: string[],
-        statistics: any
+        statistics: any,
+        pokemonIndex: number
     ) {
-        const delay = 150;
+        const delay = 45;
         await this.page.locator('input[name="pokemon"]').pressSequentially(name, {delay});
         await this.page.getByText(name).click();
         await this.page.locator('input[name="item"]').fill(item);
@@ -30,6 +31,11 @@ export class AddPokemon {
         for (const statistic of Object.keys(statistics)) {
             await this.page.locator(`input[name="evslider-${statistic}"]`).fill(statistics[statistic] ?? '');
         }
+
+        await this.page.screenshot({ 
+            path: `pokemon-${pokemonIndex}-${name}.png`,
+            fullPage: true 
+        });
     }
 
     async validateEVPoints(index: number) {
@@ -41,5 +47,9 @@ export class AddPokemon {
     async clickOnNewPokemon() {
         await this.page.locator('button[name="addPokemon"]').click();
         await this.page.locator('input[name="pokemon"]').click();
+    }
+
+    async clickOnTeamButton() {
+        await this.page.getByRole('button', { name: 'Team' }).click();
     }
 }
