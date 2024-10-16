@@ -1,0 +1,126 @@
+{
+    "format": "Ubers",
+    "gen": "Gen 5",
+    "pokemons": [
+        {
+            "name": "Excadrill",
+            "item": "Cell Battery",
+            "ability": "Mold Breaker",
+            "movements": [
+                "Brick Break",
+                "Earthquake",
+                "Facade",
+                "Cut"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "252",
+                "atk": "252",
+                "def": "4",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Dragonite",
+            "item": "Life Orb",
+            "ability": "Inner Focus",
+            "movements": [
+                "Agility",
+                "Aqua Jet",
+                "Aqua Tail",
+                "Blizzard"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "252",
+                "atk": "252",
+                "def": "4",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Taillow",
+            "item": "Choice Scarf",
+            "ability": "Guts",
+            "movements": [
+                "Air Slash",
+                "Brave Bird",
+                "Defog",
+                "Double-Edge"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "252",
+                "atk": "252",
+                "def": "4",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Flygon",
+            "item": "Absorb Bulb",
+            "ability": "Levitate",
+            "movements": [
+                "Body Slam",
+                "Crunch",
+                "Defog",
+                "Double-Edge"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "252",
+                "atk": "252",
+                "def": "4",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Rufflet",
+            "item": "Flying Gem",
+            "ability": "Hustle",
+            "movements": [
+                "Defog",
+                "Bulk Up",
+                "Brave Bird",
+                "Air Slash"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "252",
+                "atk": "252",
+                "def": "4",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Manaphy",
+            "item": "Lum Berry",
+            "ability": "Hydration",
+            "movements": [
+                "Heart Swap",
+                "Heal Bell",
+                "Grass Knot",
+                "Scald"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "252",
+                "atk": "252",
+                "def": "4",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        }
+    ]
+}
