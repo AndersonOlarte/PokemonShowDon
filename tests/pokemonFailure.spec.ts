@@ -40,7 +40,7 @@ test("Set format game, add Pokemons, and validate team with failure", async ({
   // En lugar de añadir otro Pokémon, hacemos clic en el botón "Team" después de añadir el último Pokémon
   await addPokemon.clickOnTeamButton();
 
-  await teamBuilderPage.validateTeamWithFailure([
+  await teamBuilderPage.validateTeamWithMessage([
     "Arceus-Ghost needs to hold Spooky Plate to be in its Ghost forme.",
     "(It will revert to its Normal forme if you remove the item or give it a different item.)",
     "Swablu's move Endeavor is incompatible with Body Slam.",

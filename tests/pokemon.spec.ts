@@ -39,5 +39,5 @@ test("Set format game", async ({ page }) => {
   await addPokemon.clickOnTeamButton();
 
   // Validar el equipo
-  await teamBuilderPage.validateTeam();
+  await teamBuilderPage.validateTeamWithMessage(["Your team is valid for [Gen 5] Ubers."]);
 });

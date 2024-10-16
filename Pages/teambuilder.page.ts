@@ -26,21 +26,12 @@ export class TeamBuilder {
         await this.page.getByRole('button', { name: ' Add Pokémon' }).click();
     }
 
-    async validateTeam() {
-        await this.page.getByRole('button', { name: 'Validate' }).click();
-
-        const successMessage = this.page.locator('text=Your team is valid for [Gen 5] Ubers.');
-        await expect(successMessage).toBeVisible({
-            timeout: 5000,
-        });
-    }
-
-    async validateTeamWithFailure(expectedErrors: string[]) {
+    async validateTeamWithMessage(expectedMessages: string[]) {
         await this.page.locator('button:has-text("Validate")').click();
 
-        for (const error of expectedErrors) {
-            const errorMessage = this.page.locator(`text=${error}`);
-            await expect(errorMessage).toBeVisible({
+        for (const messageText of expectedMessages) {
+            const message = this.page.locator(`text=${messageText}`);
+            await expect(message).toBeVisible({
                 timeout: 5000, 
             });
         }
