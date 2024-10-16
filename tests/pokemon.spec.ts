@@ -26,7 +26,7 @@ test("Set format game", async ({ page }) => {
       pokemon.ability,
       pokemon.movements,
       pokemon.evStatistics,
-      pokemonIndex // Pasar el índice del Pokémon
+      pokemonIndex 
     );
     await addPokemon.validateEVPoints(pokemonIndex);
     if (pokemonIndex < data.pokemons.length) {
@@ -35,9 +35,6 @@ test("Set format game", async ({ page }) => {
     ++pokemonIndex;
   }
 
-  // En lugar de añadir otro Pokémon, hacemos clic en el botón "Team" después de añadir el último Pokémon
   await addPokemon.clickOnTeamButton();
-
-  // Validar el equipo
   await teamBuilderPage.validateTeamWithMessage(["Your team is valid for [Gen 5] Ubers."]);
 });
