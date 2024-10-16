@@ -27,7 +27,7 @@ test('Set format game', async ({ page }) => {
             pokemon.movements,
             pokemon.evStatistics
         );
-        await addPokemon.validateEVPoints(pokemonIndex, expect);
+        await addPokemon.validateEVPoints(pokemonIndex);
         ++pokemonIndex;
     }
     await addPokemon.clickOnNewPokemon();
