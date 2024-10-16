@@ -1,0 +1,126 @@
+{
+    "format": "Ubers",
+    "gen": "Gen 5",
+    "pokemons": [
+        {
+            "name": "Arceus-Ghost",
+            "item": "Choice Specs",
+            "ability": "Multitype",
+            "movements": [
+                "Avalanche",
+                "Brick Break",
+                "Dragon Claw",
+                "Earth Power"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "252",
+                "atk": "252",
+                "def": "4",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Arceus-Fighting",
+            "item": "Fist Plate",
+            "ability": "Multitype",
+            "movements": [
+                "Calm Mind",
+                "Earthquake",
+                "Facade",
+                "Flamethrower"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "8",
+                "atk": "4",
+                "def": "12",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Genesect-Chill",
+            "item": "Chill Drive",
+            "ability": "Download",
+            "movements": [
+                "Bug Buzz",
+                "Facade",
+                "Frustration",
+                "Giga Drain"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "16",
+                "atk": "12",
+                "def": "20",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Arceus-Grass",
+            "item": "Meadow Plate",
+            "ability": "Multitype",
+            "movements": [
+                "Blizzard",
+                "Defog",
+                "Dragon Pulse",
+                "Energy Ball"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "0",
+                "atk": "12",
+                "def": "12",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Swablu",
+            "item": "Choice Scarf",
+            "ability": "Natural Cure",
+            "movements": [
+                "Body Slam",
+                "Cotton Guard",
+                "Endeavor",
+                "Hurricane"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "0",
+                "atk": "20",
+                "def": "0",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        },
+        {
+            "name": "Cloyster",
+            "item": "Leftovers",
+            "ability": "Overcoat",
+            "movements": [
+                "Hidden Power Grass",
+                "Facade",
+                "Double-Edge",
+                "Ice Beam"
+            ],
+            "ivSpread": "31/31/31/31/31/31",
+            "evStatistics": {
+                "hp": "20",
+                "atk": "0",
+                "def": "0",
+                "spa": "0",
+                "spd": "0",
+                "spe": "0"
+            }
+        }
+    ]
+}

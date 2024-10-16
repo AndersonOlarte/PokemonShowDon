@@ -47,10 +47,10 @@
             "item": "Choice Scarf",
             "ability": "Guts",
             "movements": [
-                "Air Slash",
-                "Brave Bird",
                 "Defog",
-                "Double-Edge"
+                "Double-Edge",
+                "Frustration",
+                "Refresh"
             ],
             "ivSpread": "31/31/31/31/31/31",
             "evStatistics": {
@@ -85,7 +85,7 @@
         {
             "name": "Rufflet",
             "item": "Flying Gem",
-            "ability": "Hustle",
+            "ability": "Keen Eye",
             "movements": [
                 "Defog",
                 "Bulk Up",
