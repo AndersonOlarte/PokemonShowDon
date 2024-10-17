@@ -1,6 +1,9 @@
 import { expect, Page } from "@playwright/test";
 
 export class AddPokemon {
+    getRemainingPoints(pokemonIndex: number) {
+      throw new Error("Method not implemented.");
+    }
     readonly page: Page;
 
     constructor(page: Page) {
